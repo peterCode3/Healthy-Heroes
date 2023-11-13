@@ -1,0 +1,190 @@
+
+
+.bgcolor{
+    background-color: yellow;
+}
+.heroContent p {
+    margin: 25px 0px;
+}
+.herosection{
+    background-image: url(../../../public/bgfinal.jpg);
+}
+.sect-fan-bnr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-snip {
+    width: 40%;
+    margin: 0;
+}
+.herosection, .fanbg{
+    background-position: center;
+    background-size: cover;
+    padding:80px 0px;
+    position: relative;
+    z-index: 3;
+}
+.fanbg {
+    background-image: url(../../../public/bgfinal.jpg);
+}
+.overlay-inner-sec {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2e2e2e;
+    left: 0;
+    z-index: -1;
+    top: 0;
+    opacity: 0.8;
+}
+.main-posts-participent {
+    padding: 0px 0px 80px 0px;
+}
+.column-data {
+    padding: 50px 0px 0px;
+}
+.column-inr-content {
+    padding: 0px 20px 20px;
+    margin: 0px;
+}
+.heroContent {
+    margin: 0px;
+}
+.herosection h1, .fanbg h1 {
+    font-size: 80px;
+    line-height: 1.2em;
+    color:#fff;
+}
+.herosection p, .fanbg p {
+    color:#fff;
+    font-size: 28px;
+    line-height: 1.2em;
+}
+.herosection button, .fanbg button {
+    padding:10px 30px;
+    background: #3E77BC;
+    color:#fff;
+    font-size:18px;
+    margin-top: 20px;
+}
+.posts-columns {
+    padding: 1.25rem;
+    width: 32.3%;
+    margin: 30px 0px;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    word-wrap: break-word;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 20px;
+}
+.profile-picture img {
+    object-fit: cover;
+    position: absolute;
+    top: -20%;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    right: 10%;
+    background: #f8f9fa!important;
+    padding: 10px;
+}
+.title-part-list h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:860px) {
+    .herosection h1, .fanbg h1 {
+        font-size: 50px;
+    }
+    .column-inr-content {
+        padding: 0px 0px 20px;
+        margin: 0px;
+    }
+    .column-data {
+        gap: 13px;
+        padding: 30px 0px 0px;
+    }
+    .profile-picture img {
+        right: 3%;
+    }
+    .posts-columns {
+        padding: 10px;
+        width:49%;
+        margin:15px 0px 0px;
+    }
+    .herosection p, .fanbg p {
+        font-size: 18px;
+    }
+    .logo-snip {
+        width:50%;
+    }
+    .edit-main {
+        width:82vw;
+        padding:30px 15px 40px;
+    }
+    .edit-main label span {
+        line-height: 25px;
+    }
+    .edit-main input[type="password"], .edit-main input[type="text"], .edit-main input[type="email"], textarea {
+        width: 100%;
+    }
+    .table-buttons button {
+        margin-bottom: 10px;
+      }      
+}
+
+@media screen and (max-width:768px) {
+    .herosection h1, .fanbg h1 {
+        font-size: 50px;
+    }
+    .logo-snip {
+        width:50%;
+    }
+    .herosection, .fanbg {
+        padding: 50px 0px;
+    }
+    .heroContent p {
+        margin: 10px 0px;
+    }
+    .dashboard-main {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:540px) {
+    .herosection, .fanbg {
+        padding: 40px 0px;
+    }
+    .posts-columns {
+        width:100%;
+        margin-top:20px;
+    }
+    .herosection h1, .fanbg h1 {
+        font-size: 40px;
+    }
+    .inr-dashboard h1 {
+        font-size: 26px;
+    }
+    .sect-fan-bnr {
+        flex-wrap: wrap;
+        gap: 44px;
+    }
+    .logo-snip {
+        width:100%;
+    }
+    .table-buttons button {
+        margin-top: 5px;
+    }
+}

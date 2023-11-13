@@ -1,0 +1,122 @@
+.ssc-hdr,
+.ssc-ftr {
+  background-color: #333;
+  padding: 10px 0px;
+  position: relative;
+}
+.ssc-ftr {
+  bottom: 0;
+  width:100%
+}
+.ssc-top-bar {
+  background-color: rgb(66, 126, 199);
+  padding:10px 0px;
+  text-align: center;
+}
+.ssc-top-bar p{
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+}
+.ssc-logo img {
+  width: 120px;
+  margin: 0;
+}
+
+.inr-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar,
+.ssc-logo {
+  margin: 0px;
+}
+
+ul.navList li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 18px;
+}
+ul.navList li a {
+  font-weight: 500;
+}
+
+.navbar,
+.ssc-ftr {
+  color: white;
+}
+
+.navList {
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+
+.toggleButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+}
+
+
+/* Footer */
+.inr-ftr {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.inr-ftr div {
+  margin: 0px;
+}
+.inr-ftr p, .inr-ftr a {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .toggleButton {
+    display: block;
+  }
+
+  .navList {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333333ed;
+    padding: 10px;
+  }
+  .inr-ftr {
+    display: block;
+  }
+  .inr-ftr div {
+      margin: 0px 0px 12px;
+  }
+  .inr-ftr p, .inr-ftr a {
+    font-size: 17px;
+  }
+  .show {
+    display: flex;
+    z-index: 1001;
+  }
+  .ssc-top-bar p{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:768px) {
+  .ssc-top-bar {
+    display: none;
+  }
+}
